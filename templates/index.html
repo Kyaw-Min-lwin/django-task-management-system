@@ -1,0 +1,10 @@
+{% for message in messages%}
+    {{message}}
+{%endfor%}
+
+<p>hello</p>
+
+<form method="POST" action="{%url 'logout'%}">
+    {% csrf_token %}
+    <input type="submit" value="Logout">
+</form>
